@@ -1,0 +1,206 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #000000;
+}
+
+.formated1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+.formated2{
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+.heading{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding-top: 71px;  
+    padding-left: 12px;
+}
+
+.heading h1{
+    font-weight: bold;
+    font-size: clamp(36px, 5vw, 38px);
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.description h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.description p{
+    font-size: clamp(14px, 4vw ,18px);
+    line-height: 21px;
+}
+
+img{
+    width: 75%;
+    min-width: 48%;
+    position: relative;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 1px;
+}
+
+.column{
+    width: 40%;
+    height: 100%;
+}
+
+.col1 {
+    float: left;
+    margin-left: 19px;
+}
+
+.col2{
+    float: right;
+    margin-top: 40px;
+    margin-right: 17px;
+    margin-left: 19px;
+}
+
+.title-card {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    font-size: clamp(11px, 4vw ,12px);
+    line-height: 13px;
+    writing-mode: vertical-rl;
+    display: flex;
+}
+
+.pictures{
+    display: inline-block;
+    padding-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.picture h4{
+    font-size: min(0.875rem, 3.5vw);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer h5{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+     color: #A9A9A9;
+}
+
+@media only screen and (min-width: 765px){
+    .team-description{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .heading, .description{
+        display: flex;
+    }
+
+    .description{
+        justify-content: flex-end;
+        padding-right: 10%;
+        padding-top: 100px;
+    }
+
+    .heading{
+        margin-left: 50px;
+    }
+
+    .picures{
+        display: flex;
+        
+    }
+
+    .column{
+        width: 100%;
+        height: 100%;
+    }
+
+    .col1,.mid-col, .col2 {
+        float: none;
+    }
+ 
+    .pictures{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comp1, .comp2 {
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .mid-col {
+        margin-top: 130px;
+    }
+
+}
+
+@media only screen and (min-width: 1300px){
+
+    .team-description{
+        display: flex;
+    }
+
+    .description{
+        justify-content: flex-end;
+        padding-right: 265px;
+    }
+
+    .heading{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 1700px){
+    .description{
+        display: flex;
+        justify-content: baseline;
+        margin-right: 365px;
+    }
+}
+
+
+
+
+
