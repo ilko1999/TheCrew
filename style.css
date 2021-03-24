@@ -129,6 +129,7 @@ img{
     .team-description{
         display: flex;
         flex-direction: row;
+        padding-bottom: 40px;
     }
 
     .heading, .description{
@@ -180,6 +181,7 @@ img{
 
     .team-description{
         display: flex;
+        padding-bottom: 100px;
     }
 
     .description{
